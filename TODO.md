@@ -3,4 +3,6 @@
 - [ ] amountをprivateにする
 - [x] Dollarの副作用をどうする
 - [ ] Moneyの丸め処理
+- [ ] equals
+- [ ] hashCode()
 
