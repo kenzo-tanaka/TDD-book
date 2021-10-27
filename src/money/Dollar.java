@@ -1,8 +1,10 @@
 package money;
 
 public class Dollar {
-
-	public Dollar(int i) {
-		// TODO 自動生成されたコンストラクター・スタブ
+	int amount = 10;
+	public Dollar(int amount) {
+	}
+	
+	void times(int multiplier) {
 	}
 }
