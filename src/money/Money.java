@@ -17,6 +17,10 @@ class Money implements Expression {
 		this.currency = currency;
 	}
 	
+	public Money reduce(String to) {
+		return this;
+	}
+	
 	String currency() {
 		return currency;
 	}

@@ -1,5 +1,7 @@
 - [ ] $5 + 10CHF = $10
 - [ ] $5 + $5 = $10
+- [ ] $5 + $5がMoneyを返す
+- [x] Banck#reduce(Money)
 - [ ] Moneyの丸め処理
 - [ ] hashCode()
 - [ ] nullとの等価性比較
