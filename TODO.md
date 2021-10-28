@@ -2,6 +2,7 @@
 - [ ] $5 + $5 = $10
 - [ ] $5 + $5がMoneyを返す
 - [x] Banck#reduce(Money)
+- [ ] Moneyを変換して換算を行う
 - [ ] Moneyの丸め処理
 - [ ] hashCode()
 - [ ] nullとの等価性比較
