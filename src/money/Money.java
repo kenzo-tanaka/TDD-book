@@ -10,7 +10,11 @@ abstract class Money {
 				&& getClass().equals(money.getClass());
 	}
 	
-	static Dollar dollar(int amount) {
+	static Money dollar(int amount) {
 		return new Dollar(amount);
+	}
+	
+	static Money franc(int amount) {
+		return new Franc(amount);
 	}
 }
