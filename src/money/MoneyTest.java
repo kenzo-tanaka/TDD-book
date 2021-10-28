@@ -8,7 +8,7 @@ class MoneyTest {
 
 	@Test
 	public void testMulti() {
-		Dollar five = Money.dollar(5);
+		Money five = Money.dollar(5);
 		assertEquals(new Dollar(10), five.times(2));
 		assertEquals(new Dollar(15), five.times(3));
 	}
