@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require_relative 'dollar'
 
 class SampleTest < Minitest::Test
   def test_sample
