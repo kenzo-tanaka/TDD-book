@@ -1,5 +1,5 @@
 class Money
-  attr_accessor :amount
+  attr_reader :amount, :currency
 
   def ==(other)
     (amount == other.amount) && (self.class.name == other.class.name)
