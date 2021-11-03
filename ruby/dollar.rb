@@ -10,6 +10,6 @@ class Dollar
   end
 
   def equal?(object)
-    true
+    @amount == object.amount
   end
 end

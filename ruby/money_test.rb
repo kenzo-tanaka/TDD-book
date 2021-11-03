@@ -13,5 +13,6 @@ class MoneyTest < Minitest::Test
 
   def test_equality
     assert_equal(true, Dollar.new(5).equal?(Dollar.new(5)))
+    assert_equal(false, Dollar.new(5).equal?(Dollar.new(6)))
   end
 end
