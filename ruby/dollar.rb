@@ -1,15 +1,15 @@
 class Dollar
-  attr_accessor :amount
+  attr_reader :amount
 
   def initialize(amount)
     @amount = amount
   end
 
   def times(multiplier)
-    Dollar.new(@amount * multiplier)
+    Dollar.new(amount * multiplier)
   end
 
   def ==(other)
-    @amount == other.amount
+    amount == other.amount
   end
 end
