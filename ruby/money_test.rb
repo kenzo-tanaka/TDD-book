@@ -13,6 +13,8 @@ class MoneyTest < Minitest::Test
   def test_equality
     assert_equal(true, Dollar.new(5) == (Dollar.new(5)))
     assert_equal(false, Dollar.new(5) == (Dollar.new(6)))
+    assert_equal(false, Franc.new(5) == (Franc.new(6)))
+    assert_equal(false, Franc.new(5) == (Franc.new(6)))
   end
 
   def test_franc_multiplication
