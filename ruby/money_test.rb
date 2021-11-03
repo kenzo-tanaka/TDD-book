@@ -1,7 +1,7 @@
 require 'minitest/autorun'
 require_relative 'dollar'
 
-class SampleTest < Minitest::Test
+class MoneyTest < Minitest::Test
   def test_sample
     five = Dollar.new(5)
     product = five.times 2
