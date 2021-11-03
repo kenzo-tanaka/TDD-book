@@ -1,4 +1,5 @@
 require 'minitest/autorun'
+require_relative 'money'
 require_relative 'dollar'
 require_relative 'franc'
 
