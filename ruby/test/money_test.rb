@@ -1,9 +1,9 @@
 require 'minitest/autorun'
-require_relative 'expression'
-require_relative 'pair'
-require_relative 'money'
-require_relative 'bank'
-require_relative 'sum'
+require_relative '../lib/expression'
+require_relative '../lib/pair'
+require_relative '../lib/money'
+require_relative '../lib/bank'
+require_relative '../lib/sum'
 
 class MoneyTest < Minitest::Test
   def test_multiplication

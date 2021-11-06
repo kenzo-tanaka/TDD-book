@@ -5,8 +5,6 @@ class Bank
     @rates = {}
   end
 
-  # 為替レートはBankが一手に管理したいので
-  # bankのインスタンスを渡す
   def reduce(source, to)
     source.reduce(self, to)
   end
