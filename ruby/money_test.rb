@@ -1,5 +1,6 @@
 require 'minitest/autorun'
 require_relative 'money'
+require_relative 'bank'
 
 class MoneyTest < Minitest::Test
   def test_multiplication
