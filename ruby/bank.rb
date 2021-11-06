@@ -22,6 +22,8 @@ class Bank
   end
 
   def rate(from, to)
+    return 1 if from == to
+
     # pair = Pair.new(from, to)
     pair = { from: from, to: to }
     rates[pair]
