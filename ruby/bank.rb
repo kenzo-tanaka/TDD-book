@@ -1,4 +1,10 @@
 class Bank
+  attr_reader :map
+
+  def initialize
+    @map = {}
+  end
+
   # 為替レートはBankが一手に管理したいので
   # bankのインスタンスを渡す
   def reduce(source, to)
