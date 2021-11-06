@@ -1,8 +1,8 @@
 class Bank
-  attr_reader :map
+  attr_reader :rates
 
   def initialize
-    @map = {}
+    @rates = {}
   end
 
   # 為替レートはBankが一手に管理したいので
@@ -11,9 +11,19 @@ class Bank
     source.reduce(self, to)
   end
 
-  def add_rate(from, to, rate); end
+  # TODO:
+  # 本来はPairクラスを使ってレートを管理したいが
+  # オブジェクトを格納する形だとうまく取得できないので
+  # ハッシュで一次対応している
+  def add_rate(from, to, rate)
+    # pair = Pair.new(from, to)
+    pair = { from: from, to: to }
+    rates[pair] = rate
+  end
 
   def rate(from, to)
-    from == 'CHF' && to == 'USD' ? 2 : 1
+    # pair = Pair.new(from, to)
+    pair = { from: from, to: to }
+    rates[pair]
   end
 end
