@@ -51,7 +51,7 @@ class MoneyTest < Minitest::Test
 
   def test_reduce_money_different_currency
     bank = Bank.new
-    bank.addRate('CHF', 'USD', 2)
+    bank.add_rate('CHF', 'USD', 2)
     result = bank.reduce(Money.franc(2), 'USD')
     assert_equal(Money.dollar(1), result)
   end
