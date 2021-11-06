@@ -20,7 +20,10 @@ class MoneyTest < Minitest::Test
   end
 
   def test_simple_addition
-    sum = Money.dollar(5).plus(Money.dollar(5))
-    assert_equal(Money.dollar(10), sum)
+    five = Money.dollar(5)
+    sum = five.plus(five)
+    bank = Bank.new
+    reduced = bank.reduce(sum, 'USD')
+    assert_equal(Money.dollar(10), reduced)
   end
 end
