@@ -1,6 +1,7 @@
 require 'minitest/autorun'
 require_relative 'money'
 require_relative 'bank'
+require_relative 'sum'
 
 class MoneyTest < Minitest::Test
   def test_multiplication
@@ -26,5 +27,12 @@ class MoneyTest < Minitest::Test
     bank = Bank.new
     reduced = bank.reduce(sum, 'USD')
     assert_equal(Money.dollar(10), reduced)
+  end
+
+  def test_plus_returns_sum
+    five = Money.dollar(5)
+    sum = five.plus(five)
+    assert_equal(five, sum.augend)
+    assert_equal(five, sum.addend)
   end
 end
