@@ -18,6 +18,10 @@ class Money
     Sum.new(self, addend)
   end
 
+  def reduce(to)
+    self
+  end
+
   def self.dollar(amount)
     Money.new(amount, 'USD')
   end
